@@ -47,7 +47,6 @@ describe('gulpLibrary', function () {
   });
 
   it('Should have a dev task', function () {
-    console.log(gulpMock.tasks);
     gulpMock.tasks.forEach(function (obj) {
       if (obj.name === 'dev') {
         obj.func.should.be.type('function');
