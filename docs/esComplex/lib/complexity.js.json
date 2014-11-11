@@ -1,0 +1,188 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 15,
+      "physical": 35
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 9,
+        "total": 30,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return",
+          "{}",
+          ":"
+        ]
+      },
+      "operands": {
+        "distinct": 30,
+        "total": 46,
+        "identifiers": [
+          "\"use strict\"",
+          "complexity",
+          "\"gulp-complexity\"",
+          "require",
+          "gulp",
+          null,
+          "config",
+          "complexitySetup",
+          "gulpRef",
+          "conf",
+          "\"complexity\"",
+          0,
+          "<anonymous>",
+          "complexityTask",
+          "task",
+          "cyclomatic",
+          5,
+          10,
+          15,
+          "halstead",
+          30,
+          45,
+          "maintainability",
+          100,
+          "breakOnErrors",
+          1,
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 76,
+      "vocabulary": 39,
+      "difficulty": 6.9,
+      "volume": 401.6905686335309,
+      "effort": 2771.6649235713635,
+      "bugs": 0.13389685621117697,
+      "time": 153.98138464285353
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 6.666666666666667
+  },
+  "functions": [
+    {
+      "name": "complexitySetup",
+      "sloc": {
+        "logical": 3,
+        "physical": 5
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"complexity\"",
+            0,
+            "<anonymous>",
+            "complexityTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 14,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "complexityTask",
+      "sloc": {
+        "logical": 5,
+        "physical": 9
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 6,
+          "total": 14,
+          "identifiers": [
+            "return",
+            "()",
+            "{}",
+            ":",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 17,
+          "total": 21,
+          "identifiers": [
+            "<anonymous>",
+            "cyclomatic",
+            5,
+            10,
+            15,
+            "halstead",
+            30,
+            45,
+            "maintainability",
+            100,
+            "breakOnErrors",
+            1,
+            "complexity",
+            "config",
+            "src",
+            "gulp",
+            "pipe"
+          ]
+        },
+        "length": 35,
+        "vocabulary": 23,
+        "difficulty": 3.7058823529411766,
+        "volume": 158.32466846199546,
+        "effort": 586.7325948885714,
+        "bugs": 0.05277488948733182,
+        "time": 32.596255271587296
+      },
+      "params": 0,
+      "line": 25,
+      "cyclomaticDensity": 20
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-complexity",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 75.00090628115235,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/complexity.js"
+  }
+}

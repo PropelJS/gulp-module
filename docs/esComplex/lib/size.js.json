@@ -1,0 +1,169 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 12,
+      "physical": 31
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 9,
+        "total": 25,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return",
+          "{}",
+          ":"
+        ]
+      },
+      "operands": {
+        "distinct": 21,
+        "total": 34,
+        "identifiers": [
+          "\"use strict\"",
+          "size",
+          "\"gulp-size\"",
+          "require",
+          "gulp",
+          null,
+          "config",
+          "setupSize",
+          "gulpRef",
+          "conf",
+          "\"size\"",
+          0,
+          "<anonymous>",
+          "sizeTask",
+          "task",
+          "showFiles",
+          1,
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 59,
+      "vocabulary": 30,
+      "difficulty": 7.285714285714286,
+      "volume": 289.50654514090263,
+      "effort": 2109.261971740862,
+      "bugs": 0.09650218171363421,
+      "time": 117.18122065227011
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 8.333333333333332
+  },
+  "functions": [
+    {
+      "name": "setupSize",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"size\"",
+            0,
+            "<anonymous>",
+            "sizeTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 14,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "sizeTask",
+      "sloc": {
+        "logical": 2,
+        "physical": 4
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 5,
+          "total": 9,
+          "identifiers": [
+            "return",
+            "()",
+            "{}",
+            ":",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 8,
+          "total": 9,
+          "identifiers": [
+            "<anonymous>",
+            "showFiles",
+            1,
+            "size",
+            "config",
+            "src",
+            "gulp",
+            "pipe"
+          ]
+        },
+        "length": 18,
+        "vocabulary": 13,
+        "difficulty": 2.8125,
+        "volume": 66.60791492653966,
+        "effort": 187.3347607308928,
+        "bugs": 0.022202638308846556,
+        "time": 10.407486707271822
+      },
+      "params": 0,
+      "line": 26,
+      "cyclomaticDensity": 50
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-size",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 80.96091387270708,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/size.js"
+  }
+}

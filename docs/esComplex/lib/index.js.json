@@ -1,0 +1,275 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 20,
+      "physical": 60
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 6,
+        "total": 35,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          "."
+        ]
+      },
+      "operands": {
+        "distinct": 35,
+        "total": 79,
+        "identifiers": [
+          "\"use strict\"",
+          "help",
+          "\"gulp-help\"",
+          "require",
+          "gulpSetup",
+          "gulp",
+          "config",
+          "defineLint",
+          "defineComplexity",
+          "\"./jsvalidate\"",
+          "\"./jshint\"",
+          "\"./jscs\"",
+          "\"./jscpd\"",
+          "\"lint\"",
+          "\"Lints Source Files for Errors and Coding Style\"",
+          "<anonymous>",
+          "\"jsvalidate\"",
+          "\"jshint\"",
+          "\"jscs\"",
+          "\"jscpd\"",
+          "task",
+          "\"./size\"",
+          "\"./complexity\"",
+          "\"./plato\"",
+          "\"./escomplex\"",
+          "\"./cost\"",
+          "\"comp\"",
+          "\"Runs Complexity Analysis on Source Files\"",
+          "\"size\"",
+          "\"complexity\"",
+          "\"plato\"",
+          "\"escomplex\"",
+          "\"cost\"",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 114,
+      "vocabulary": 41,
+      "difficulty": 6.771428571428571,
+      "volume": 610.7609285264615,
+      "effort": 4135.724001736325,
+      "bugs": 0.20358697617548716,
+      "time": 229.76244454090693
+    },
+    "params": 6,
+    "line": 1,
+    "cyclomaticDensity": 5
+  },
+  "functions": [
+    {
+      "name": "gulpSetup",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 1,
+          "total": 3,
+          "identifiers": [
+            "()"
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 10,
+          "identifiers": [
+            "gulp",
+            "config",
+            "help",
+            "defineLint",
+            "defineComplexity"
+          ]
+        },
+        "length": 13,
+        "vocabulary": 6,
+        "difficulty": 1,
+        "volume": 33.60451250937503,
+        "effort": 33.60451250937503,
+        "bugs": 0.011201504169791677,
+        "time": 1.8669173616319459
+      },
+      "params": 2,
+      "line": 11,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "defineLint",
+      "sloc": {
+        "logical": 5,
+        "physical": 13
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 11,
+          "identifiers": [
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 15,
+          "total": 27,
+          "identifiers": [
+            "gulp",
+            "config",
+            "\"./jsvalidate\"",
+            "require",
+            "\"./jshint\"",
+            "\"./jscs\"",
+            "\"./jscpd\"",
+            "\"lint\"",
+            "\"Lints Source Files for Errors and Coding Style\"",
+            "<anonymous>",
+            "\"jsvalidate\"",
+            "\"jshint\"",
+            "\"jscs\"",
+            "\"jscpd\"",
+            "task"
+          ]
+        },
+        "length": 38,
+        "vocabulary": 18,
+        "difficulty": 2.7,
+        "volume": 158.45715005480787,
+        "effort": 427.8343051479813,
+        "bugs": 0.05281905001826929,
+        "time": 23.768572508221183
+      },
+      "params": 2,
+      "line": 24,
+      "cyclomaticDensity": 20
+    },
+    {
+      "name": "defineComplexity",
+      "sloc": {
+        "logical": 6,
+        "physical": 15
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 13,
+          "identifiers": [
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 17,
+          "total": 32,
+          "identifiers": [
+            "gulp",
+            "config",
+            "\"./size\"",
+            "require",
+            "\"./complexity\"",
+            "\"./plato\"",
+            "\"./escomplex\"",
+            "\"./cost\"",
+            "\"comp\"",
+            "\"Runs Complexity Analysis on Source Files\"",
+            "<anonymous>",
+            "\"size\"",
+            "\"complexity\"",
+            "\"plato\"",
+            "\"escomplex\"",
+            "\"cost\"",
+            "task"
+          ]
+        },
+        "length": 45,
+        "vocabulary": 20,
+        "difficulty": 2.8235294117647056,
+        "volume": 194.4867642699313,
+        "effort": 549.1390991151002,
+        "bugs": 0.06482892142331044,
+        "time": 30.507727728616675
+      },
+      "params": 2,
+      "line": 44,
+      "cyclomaticDensity": 16.666666666666664
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-help",
+      "type": "CommonJS"
+    },
+    {
+      "line": 25,
+      "path": "./jsvalidate",
+      "type": "CommonJS"
+    },
+    {
+      "line": 26,
+      "path": "./jshint",
+      "type": "CommonJS"
+    },
+    {
+      "line": 27,
+      "path": "./jscs",
+      "type": "CommonJS"
+    },
+    {
+      "line": 28,
+      "path": "./jscpd",
+      "type": "CommonJS"
+    },
+    {
+      "line": 45,
+      "path": "./size",
+      "type": "CommonJS"
+    },
+    {
+      "line": 46,
+      "path": "./complexity",
+      "type": "CommonJS"
+    },
+    {
+      "line": 47,
+      "path": "./plato",
+      "type": "CommonJS"
+    },
+    {
+      "line": 48,
+      "path": "./escomplex",
+      "type": "CommonJS"
+    },
+    {
+      "line": 49,
+      "path": "./cost",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 73.76697943369469,
+  "params": 2,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/index.js"
+  }
+}

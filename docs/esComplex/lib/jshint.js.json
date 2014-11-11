@@ -1,0 +1,166 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 11,
+      "physical": 33
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 7,
+        "total": 31,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return"
+        ]
+      },
+      "operands": {
+        "distinct": 22,
+        "total": 39,
+        "identifiers": [
+          "\"use strict\"",
+          "jshint",
+          "\"gulp-jshint\"",
+          "require",
+          "gulp",
+          null,
+          "config",
+          "jsHintSetup",
+          "gulpRef",
+          "conf",
+          "\"jshint\"",
+          0,
+          "<anonymous>",
+          "jshintTask",
+          "task",
+          "\"fail\"",
+          "reporter",
+          "\"jshint-stylish\"",
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 70,
+      "vocabulary": 29,
+      "difficulty": 6.204545454545454,
+      "volume": 340.0586696589301,
+      "effort": 2109.909473111089,
+      "bugs": 0.11335288988631004,
+      "time": 117.21719295061605
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 9.090909090909092
+  },
+  "functions": [
+    {
+      "name": "jsHintSetup",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"jshint\"",
+            0,
+            "<anonymous>",
+            "jshintTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 14,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "jshintTask",
+      "sloc": {
+        "logical": 1,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 15,
+          "identifiers": [
+            "return",
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 8,
+          "total": 14,
+          "identifiers": [
+            "\"fail\"",
+            "jshint",
+            "reporter",
+            "\"jshint-stylish\"",
+            "config",
+            "src",
+            "gulp",
+            "pipe"
+          ]
+        },
+        "length": 29,
+        "vocabulary": 11,
+        "difficulty": 2.625,
+        "volume": 100.32351694048164,
+        "effort": 263.3492319687643,
+        "bugs": 0.03344117231349388,
+        "time": 14.630512887153571
+      },
+      "params": 0,
+      "line": 26,
+      "cyclomaticDensity": 100
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-jshint",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 82.68694510312112,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/jshint.js"
+  }
+}

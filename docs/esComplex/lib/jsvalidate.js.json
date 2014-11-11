@@ -1,0 +1,160 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 11,
+      "physical": 31
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 7,
+        "total": 23,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return"
+        ]
+      },
+      "operands": {
+        "distinct": 19,
+        "total": 31,
+        "identifiers": [
+          "\"use strict\"",
+          "jsvalidate",
+          "\"gulp-jsvalidate\"",
+          "require",
+          "gulp",
+          null,
+          "config",
+          "setupJSValidate",
+          "gulpRef",
+          "conf",
+          "\"jsvalidate\"",
+          0,
+          "<anonymous>",
+          "jsValidateTask",
+          "task",
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 54,
+      "vocabulary": 26,
+      "difficulty": 5.7105263157894735,
+      "volume": 253.823744779619,
+      "effort": 1449.4671741362454,
+      "bugs": 0.08460791492653967,
+      "time": 80.5259541186803
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 9.090909090909092
+  },
+  "functions": [
+    {
+      "name": "setupJSValidate",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"jsvalidate\"",
+            0,
+            "<anonymous>",
+            "jsValidateTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 14,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "jsValidateTask",
+      "sloc": {
+        "logical": 1,
+        "physical": 4
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 7,
+          "identifiers": [
+            "return",
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 6,
+          "identifiers": [
+            "jsvalidate",
+            "config",
+            "src",
+            "gulp",
+            "pipe"
+          ]
+        },
+        "length": 13,
+        "vocabulary": 8,
+        "difficulty": 1.7999999999999998,
+        "volume": 39,
+        "effort": 70.19999999999999,
+        "bugs": 0.013,
+        "time": 3.8999999999999995
+      },
+      "params": 0,
+      "line": 26,
+      "cyclomaticDensity": 100
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-jsvalidate",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 83.875488264713,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/jsvalidate.js"
+  }
+}

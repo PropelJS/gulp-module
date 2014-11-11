@@ -1,0 +1,186 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 14,
+      "physical": 37
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 9,
+        "total": 33,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return",
+          "{}",
+          ":"
+        ]
+      },
+      "operands": {
+        "distinct": 26,
+        "total": 44,
+        "identifiers": [
+          "\"use strict\"",
+          "path",
+          "\"path\"",
+          "require",
+          "plato",
+          "\"gulp-plato\"",
+          "config",
+          null,
+          "gulp",
+          "setupPlato",
+          "gulpRef",
+          "conf",
+          "\"plato\"",
+          0,
+          "<anonymous>",
+          "platoTask",
+          "task",
+          "outPath",
+          "root",
+          "\"docs/complexity\"",
+          "resolve",
+          "jshint",
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 77,
+      "vocabulary": 35,
+      "difficulty": 7.615384615384615,
+      "volume": 394.9547923047624,
+      "effort": 3007.7326490901137,
+      "bugs": 0.1316515974349208,
+      "time": 167.0962582827841
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 7.142857142857142
+  },
+  "functions": [
+    {
+      "name": "setupPlato",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"plato\"",
+            0,
+            "<anonymous>",
+            "platoTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 15,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "platoTask",
+      "sloc": {
+        "logical": 3,
+        "physical": 9
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 7,
+          "total": 14,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "return",
+            "{}",
+            ":"
+          ]
+        },
+        "operands": {
+          "distinct": 13,
+          "total": 16,
+          "identifiers": [
+            "outPath",
+            "config",
+            "root",
+            "\"docs/complexity\"",
+            "path",
+            "resolve",
+            "<anonymous>",
+            "jshint",
+            0,
+            "plato",
+            "src",
+            "gulp",
+            "pipe"
+          ]
+        },
+        "length": 30,
+        "vocabulary": 20,
+        "difficulty": 4.307692307692308,
+        "volume": 129.65784284662087,
+        "effort": 558.5260922623669,
+        "bugs": 0.043219280948873624,
+        "time": 31.02922734790927
+      },
+      "params": 0,
+      "line": 27,
+      "cyclomaticDensity": 33.33333333333333
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "path",
+      "type": "CommonJS"
+    },
+    {
+      "line": 4,
+      "path": "gulp-plato",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 77.80251900149501,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/plato.js"
+  }
+}

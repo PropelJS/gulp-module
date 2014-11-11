@@ -1,0 +1,188 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 14,
+      "physical": 37
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 7,
+        "total": 41,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return"
+        ]
+      },
+      "operands": {
+        "distinct": 28,
+        "total": 49,
+        "identifiers": [
+          "\"use strict\"",
+          "complexity",
+          "\"gulp-escomplex\"",
+          "require",
+          "reporter",
+          "\"gulp-escomplex-reporter-json\"",
+          "path",
+          "\"path\"",
+          "gulp",
+          null,
+          "config",
+          "setupESComplex",
+          "gulpRef",
+          "conf",
+          "\"escomplex\"",
+          0,
+          "<anonymous>",
+          "esComplexTask",
+          "task",
+          "outputDir",
+          "root",
+          "\"docs/esComplex\"",
+          "resolve",
+          "dest",
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 90,
+      "vocabulary": 35,
+      "difficulty": 6.125,
+      "volume": 461.63547152504697,
+      "effort": 2827.517263090913,
+      "bugs": 0.15387849050834898,
+      "time": 157.0842923939396
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 7.142857142857142
+  },
+  "functions": [
+    {
+      "name": "setupESComplex",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"escomplex\"",
+            0,
+            "<anonymous>",
+            "esComplexTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 16,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "esComplexTask",
+      "sloc": {
+        "logical": 2,
+        "physical": 8
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 5,
+          "total": 19,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "return"
+          ]
+        },
+        "operands": {
+          "distinct": 12,
+          "total": 18,
+          "identifiers": [
+            "outputDir",
+            "config",
+            "root",
+            "\"docs/esComplex\"",
+            "path",
+            "resolve",
+            "gulp",
+            "dest",
+            "reporter",
+            "complexity",
+            "src",
+            "pipe"
+          ]
+        },
+        "length": 37,
+        "vocabulary": 17,
+        "difficulty": 3.75,
+        "volume": 151.23612512626258,
+        "effort": 567.1354692234846,
+        "bugs": 0.05041204170875419,
+        "time": 31.50752606797137
+      },
+      "params": 0,
+      "line": 28,
+      "cyclomaticDensity": 50
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-escomplex",
+      "type": "CommonJS"
+    },
+    {
+      "line": 4,
+      "path": "gulp-escomplex-reporter-json",
+      "type": "CommonJS"
+    },
+    {
+      "line": 5,
+      "path": "path",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 79.50620710477473,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/escomplex.js"
+  }
+}

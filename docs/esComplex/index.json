@@ -1,0 +1,23 @@
+{
+  "reports": [
+    "gulpfile.js.json",
+    "lib/calculator.js.json",
+    "lib/complexity.js.json",
+    "lib/cost.js.json",
+    "lib/escomplex.js.json",
+    "lib/index.js.json",
+    "lib/jscpd.js.json",
+    "lib/jscs.js.json",
+    "lib/jshint.js.json",
+    "lib/jsvalidate.js.json",
+    "lib/plato.js.json",
+    "lib/size.js.json"
+  ],
+  "baseDir": "/var/node/propel/gulp-module/",
+  "cwd": "/var/node/propel/gulp-module",
+  "reporterName": "gulp-escomplex-reporter-json",
+  "reporterVersion": "1.0.0",
+  "analysis": "gulp-escomplex",
+  "analysisVersion": "1.0.1",
+  "created": "2014-11-11T19:01:55.276Z"
+}
