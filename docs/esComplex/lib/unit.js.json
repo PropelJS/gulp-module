@@ -1,0 +1,255 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 25,
+      "physical": 49
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 8,
+        "total": 52,
+        "identifiers": [
+          "var",
+          "=",
+          ".",
+          "()",
+          "function",
+          "[]",
+          "+=",
+          "+"
+        ]
+      },
+      "operands": {
+        "distinct": 45,
+        "total": 78,
+        "identifiers": [
+          "\"use strict\"",
+          "exec",
+          "\"child_process\"",
+          "require",
+          "path",
+          "\"path\"",
+          "gulp",
+          null,
+          "config",
+          "setupUnit",
+          "gulpRef",
+          "conf",
+          "\"unit\"",
+          0,
+          "<anonymous>",
+          "unitTask",
+          "task",
+          "done",
+          "istanbulPath",
+          "__dirname",
+          "\"../node_modules/istanbul/lib/cli.js\"",
+          "resolve",
+          "mochaPath",
+          "\"../node_modules/mocha/bin/_mocha\"",
+          "outputDir",
+          "root",
+          "\"docs/coverage\"",
+          "cmd",
+          "\"node --harmony \"",
+          "\" cover\"",
+          "\" --dir \"",
+          "\" -x \"**\"",
+          "\"/docs/\"",
+          "\"**\"\"",
+          "\" \"",
+          "\" -- --harmony\"",
+          "execCallback",
+          "err",
+          "stdout",
+          "stderr",
+          "console",
+          "log",
+          "error",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 130,
+      "vocabulary": 53,
+      "difficulty": 6.933333333333334,
+      "volume": 744.629659093216,
+      "effort": 5162.765636379631,
+      "bugs": 0.24820988636440533,
+      "time": 286.82031313220176
+    },
+    "params": 6,
+    "line": 1,
+    "cyclomaticDensity": 4
+  },
+  "functions": [
+    {
+      "name": "setupUnit",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"unit\"",
+            0,
+            "<anonymous>",
+            "unitTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 15,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "unitTask",
+      "sloc": {
+        "logical": 11,
+        "physical": 21
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 7,
+          "total": 27,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "+=",
+            "+",
+            "function"
+          ]
+        },
+        "operands": {
+          "distinct": 23,
+          "total": 38,
+          "identifiers": [
+            "done",
+            "istanbulPath",
+            "__dirname",
+            "\"../node_modules/istanbul/lib/cli.js\"",
+            "path",
+            "resolve",
+            "mochaPath",
+            "\"../node_modules/mocha/bin/_mocha\"",
+            "outputDir",
+            "config",
+            "root",
+            "\"docs/coverage\"",
+            "cmd",
+            "\"node --harmony \"",
+            "\" cover\"",
+            "\" --dir \"",
+            "\" -x \"**\"",
+            "\"/docs/\"",
+            "\"**\"\"",
+            "\" \"",
+            "\" -- --harmony\"",
+            "execCallback",
+            "exec"
+          ]
+        },
+        "length": 65,
+        "vocabulary": 30,
+        "difficulty": 5.782608695652174,
+        "volume": 318.9478887145537,
+        "effort": 1844.35083474068,
+        "bugs": 0.10631596290485124,
+        "time": 102.46393526337111
+      },
+      "params": 1,
+      "line": 27,
+      "cyclomaticDensity": 9.090909090909092
+    },
+    {
+      "name": "execCallback",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 5,
+          "identifiers": [
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 7,
+          "total": 11,
+          "identifiers": [
+            "err",
+            "stdout",
+            "stderr",
+            "console",
+            "log",
+            "error",
+            "done"
+          ]
+        },
+        "length": 16,
+        "vocabulary": 9,
+        "difficulty": 1.5714285714285714,
+        "volume": 50.718800023077,
+        "effort": 79.70097146483529,
+        "bugs": 0.016906266674359,
+        "time": 4.427831748046405
+      },
+      "params": 3,
+      "line": 41,
+      "cyclomaticDensity": 33.33333333333333
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "child_process",
+      "type": "CommonJS"
+    },
+    {
+      "line": 4,
+      "path": "path",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 70.47259665993195,
+  "params": 2,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/unit.js"
+  }
+}

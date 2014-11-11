@@ -1,0 +1,180 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 13,
+      "physical": 34
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 7,
+        "total": 35,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "function",
+          "[]",
+          ".",
+          "return"
+        ]
+      },
+      "operands": {
+        "distinct": 26,
+        "total": 44,
+        "identifiers": [
+          "\"use strict\"",
+          "contribs",
+          "\"gulp-contribs\"",
+          "require",
+          "path",
+          "\"path\"",
+          "gulp",
+          null,
+          "config",
+          "setupContribs",
+          "gulpRef",
+          "conf",
+          "\"contribs\"",
+          0,
+          "<anonymous>",
+          "contribsTask",
+          "task",
+          "fp",
+          "root",
+          "\"contributors.md\"",
+          "resolve",
+          "dest",
+          "src",
+          "pipe",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 79,
+      "vocabulary": 33,
+      "difficulty": 5.923076923076923,
+      "volume": 398.5071354293178,
+      "effort": 2360.3884175428825,
+      "bugs": 0.1328357118097726,
+      "time": 131.13268986349348
+    },
+    "params": 2,
+    "line": 1,
+    "cyclomaticDensity": 7.6923076923076925
+  },
+  "functions": [
+    {
+      "name": "setupContribs",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"contribs\"",
+            0,
+            "<anonymous>",
+            "contribsTask",
+            "task"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 13,
+        "difficulty": 2.6666666666666665,
+        "volume": 62.907475208398566,
+        "effort": 167.75326722239618,
+        "bugs": 0.02096915840279952,
+        "time": 9.319625956799788
+      },
+      "params": 2,
+      "line": 15,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "contribsTask",
+      "sloc": {
+        "logical": 2,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 5,
+          "total": 16,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "return"
+          ]
+        },
+        "operands": {
+          "distinct": 11,
+          "total": 16,
+          "identifiers": [
+            "fp",
+            "config",
+            "root",
+            "\"contributors.md\"",
+            "path",
+            "resolve",
+            "gulp",
+            "dest",
+            "contribs",
+            "src",
+            "pipe"
+          ]
+        },
+        "length": 32,
+        "vocabulary": 16,
+        "difficulty": 3.6363636363636367,
+        "volume": 128,
+        "effort": 465.4545454545455,
+        "bugs": 0.042666666666666665,
+        "time": 25.85858585858586
+      },
+      "params": 0,
+      "line": 27,
+      "cyclomaticDensity": 50
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "gulp-contribs",
+      "type": "CommonJS"
+    },
+    {
+      "line": 4,
+      "path": "path",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 79.80404798964412,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/contribs.js"
+  }
+}

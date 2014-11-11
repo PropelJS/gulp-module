@@ -2,8 +2,12 @@
   "reports": [
     "gulpfile.js.json",
     "lib/calculator.js.json",
+    "lib/changelog.js.json",
     "lib/complexity.js.json",
+    "lib/contribs.js.json",
     "lib/cost.js.json",
+    "lib/coverage.js.json",
+    "lib/docs.js.json",
     "lib/escomplex.js.json",
     "lib/index.js.json",
     "lib/jscpd.js.json",
@@ -11,7 +15,26 @@
     "lib/jshint.js.json",
     "lib/jsvalidate.js.json",
     "lib/plato.js.json",
-    "lib/size.js.json"
+    "lib/size.js.json",
+    "lib/todo.js.json",
+    "lib/unit.js.json",
+    "test/calculator.js.json",
+    "test/changelog.js.json",
+    "test/complexity.js.json",
+    "test/contribs.js.json",
+    "test/cost.js.json",
+    "test/coverage.js.json",
+    "test/docs.js.json",
+    "test/escomplex.js.json",
+    "test/index.js.json",
+    "test/jscpd.js.json",
+    "test/jscs.js.json",
+    "test/jshint.js.json",
+    "test/jsvalidate.js.json",
+    "test/plato.js.json",
+    "test/size.js.json",
+    "test/todo.js.json",
+    "test/unit.js.json"
   ],
   "baseDir": "/var/node/propel/gulp-module/",
   "cwd": "/var/node/propel/gulp-module",
@@ -19,5 +42,5 @@
   "reporterVersion": "1.0.0",
   "analysis": "gulp-escomplex",
   "analysisVersion": "1.0.1",
-  "created": "2014-11-11T19:01:55.276Z"
+  "created": "2014-11-11T20:06:25.795Z"
 }

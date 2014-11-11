@@ -1,0 +1,298 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 23,
+      "physical": 42
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 8,
+        "total": 47,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "{}",
+          ".",
+          "function",
+          ":",
+          "catch"
+        ]
+      },
+      "operands": {
+        "distinct": 35,
+        "total": 63,
+        "identifiers": [
+          "\"use strict\"",
+          "should",
+          "\"should\"",
+          "require",
+          "path",
+          "\"path\"",
+          "cost",
+          "\"../lib/cost\"",
+          "gulpMock",
+          "<anonymous>",
+          "task",
+          null,
+          "name",
+          "description",
+          "deps",
+          "func",
+          "configMock",
+          "root",
+          "__dirname",
+          "\"../\"",
+          "resolve",
+          "\"Gulp Module Cost\"",
+          "\"Should return a function\"",
+          "\"function\"",
+          "be",
+          "type",
+          "it",
+          "\"Should create a task\"",
+          "\"Should run\"",
+          "cb",
+          5000,
+          "this",
+          "timeout",
+          "e",
+          "describe"
+        ]
+      },
+      "length": 110,
+      "vocabulary": 43,
+      "difficulty": 7.2,
+      "volume": 596.8891230172308,
+      "effort": 4297.601685724062,
+      "bugs": 0.19896304100574358,
+      "time": 238.75564920689234
+    },
+    "params": 5,
+    "line": 1,
+    "cyclomaticDensity": 4.3478260869565215
+  },
+  "functions": [
+    {
+      "name": "gulpMock.task",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 1,
+          "total": 1,
+          "identifiers": [
+            "="
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 6,
+          "identifiers": [
+            "name",
+            "description",
+            "deps",
+            "func",
+            "task"
+          ]
+        },
+        "length": 7,
+        "vocabulary": 6,
+        "difficulty": 0.6,
+        "volume": 18.094737505048094,
+        "effort": 10.856842503028856,
+        "bugs": 0.006031579168349364,
+        "time": 0.6031579168349365
+      },
+      "params": 4,
+      "line": 13,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 3,
+        "physical": 20
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 6,
+          "identifiers": [
+            "()",
+            "function"
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 9,
+          "identifiers": [
+            "\"Should return a function\"",
+            "<anonymous>",
+            "it",
+            "\"Should create a task\"",
+            "\"Should run\""
+          ]
+        },
+        "length": 15,
+        "vocabulary": 7,
+        "difficulty": 1.8,
+        "volume": 42.11032383086406,
+        "effort": 75.79858289555531,
+        "bugs": 0.01403677461028802,
+        "time": 4.2110323830864065
+      },
+      "params": 0,
+      "line": 23,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 4,
+          "identifiers": [
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 5,
+          "identifiers": [
+            "\"function\"",
+            "cost",
+            "should",
+            "be",
+            "type"
+          ]
+        },
+        "length": 9,
+        "vocabulary": 7,
+        "difficulty": 1,
+        "volume": 25.26619429851844,
+        "effort": 25.26619429851844,
+        "bugs": 0.008422064766172813,
+        "time": 1.403677461028802
+      },
+      "params": 0,
+      "line": 24,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 4,
+          "identifiers": [
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 5,
+          "identifiers": [
+            "\"function\"",
+            "task",
+            "should",
+            "be",
+            "type"
+          ]
+        },
+        "length": 9,
+        "vocabulary": 7,
+        "difficulty": 1,
+        "volume": 25.26619429851844,
+        "effort": 25.26619429851844,
+        "bugs": 0.008422064766172813,
+        "time": 1.403677461028802
+      },
+      "params": 0,
+      "line": 28,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 6,
+        "physical": 10
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 6,
+          "identifiers": [
+            "()",
+            ".",
+            "catch"
+          ]
+        },
+        "operands": {
+          "distinct": 6,
+          "total": 8,
+          "identifiers": [
+            "cb",
+            5000,
+            "this",
+            "timeout",
+            "task",
+            "e"
+          ]
+        },
+        "length": 14,
+        "vocabulary": 9,
+        "difficulty": 2,
+        "volume": 44.37895002019238,
+        "effort": 88.75790004038475,
+        "bugs": 0.014792983340064125,
+        "time": 4.930994446688042
+      },
+      "params": 1,
+      "line": 32,
+      "cyclomaticDensity": 16.666666666666664
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 5,
+      "path": "should",
+      "type": "CommonJS"
+    },
+    {
+      "line": 6,
+      "path": "path",
+      "type": "CommonJS"
+    },
+    {
+      "line": 8,
+      "path": "../lib/cost",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 84.08437193691249,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "test/cost.js"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 22,
+      "physical": 40
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 9,
+        "total": 42,
+        "identifiers": [
+          "var",
+          "=",
+          "()",
+          "{}",
+          ".",
+          "function",
+          ":",
+          "[]",
+          "catch"
+        ]
+      },
+      "operands": {
+        "distinct": 34,
+        "total": 60,
+        "identifiers": [
+          "\"use strict\"",
+          "should",
+          "\"should\"",
+          "require",
+          "plato",
+          "\"../lib/plato\"",
+          "gulpMock",
+          "<anonymous>",
+          "task",
+          null,
+          "name",
+          "description",
+          "deps",
+          "func",
+          "configMock",
+          "mod",
+          "\"plato\"",
+          "root",
+          "__dirname",
+          "src",
+          "\"**/*.js\"",
+          "\"!./node_modules/**\"",
+          "\"!./docs/**\"",
+          "\"Gulp module plato\"",
+          "\"Should return a function\"",
+          "\"function\"",
+          "be",
+          "type",
+          "it",
+          "\"Should create the plato task\"",
+          "\"Should run the plato task\"",
+          "cb",
+          "e",
+          "describe"
+        ]
+      },
+      "length": 102,
+      "vocabulary": 43,
+      "difficulty": 7.9411764705882355,
+      "volume": 553.4790049796139,
+      "effort": 4395.274451308699,
+      "bugs": 0.18449300165987131,
+      "time": 244.1819139615944
+    },
+    "params": 5,
+    "line": 1,
+    "cyclomaticDensity": 4.545454545454546
+  },
+  "functions": [
+    {
+      "name": "gulpMock.task",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 1,
+          "total": 1,
+          "identifiers": [
+            "="
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 6,
+          "identifiers": [
+            "name",
+            "description",
+            "deps",
+            "func",
+            "task"
+          ]
+        },
+        "length": 7,
+        "vocabulary": 6,
+        "difficulty": 0.6,
+        "volume": 18.094737505048094,
+        "effort": 10.856842503028856,
+        "bugs": 0.006031579168349364,
+        "time": 0.6031579168349365
+      },
+      "params": 4,
+      "line": 12,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 3,
+        "physical": 17
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 6,
+          "identifiers": [
+            "()",
+            "function"
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 9,
+          "identifiers": [
+            "\"Should return a function\"",
+            "<anonymous>",
+            "it",
+            "\"Should create the plato task\"",
+            "\"Should run the plato task\""
+          ]
+        },
+        "length": 15,
+        "vocabulary": 7,
+        "difficulty": 1.8,
+        "volume": 42.11032383086406,
+        "effort": 75.79858289555531,
+        "bugs": 0.01403677461028802,
+        "time": 4.2110323830864065
+      },
+      "params": 0,
+      "line": 24,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 4,
+          "identifiers": [
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 5,
+          "identifiers": [
+            "\"function\"",
+            "plato",
+            "should",
+            "be",
+            "type"
+          ]
+        },
+        "length": 9,
+        "vocabulary": 7,
+        "difficulty": 1,
+        "volume": 25.26619429851844,
+        "effort": 25.26619429851844,
+        "bugs": 0.008422064766172813,
+        "time": 1.403677461028802
+      },
+      "params": 0,
+      "line": 25,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 4,
+          "identifiers": [
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 5,
+          "total": 5,
+          "identifiers": [
+            "\"function\"",
+            "task",
+            "should",
+            "be",
+            "type"
+          ]
+        },
+        "length": 9,
+        "vocabulary": 7,
+        "difficulty": 1,
+        "volume": 25.26619429851844,
+        "effort": 25.26619429851844,
+        "bugs": 0.008422064766172813,
+        "time": 1.403677461028802
+      },
+      "params": 0,
+      "line": 29,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 4,
+        "physical": 7
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 3,
+          "identifiers": [
+            "()",
+            "catch"
+          ]
+        },
+        "operands": {
+          "distinct": 3,
+          "total": 4,
+          "identifiers": [
+            "cb",
+            "task",
+            "e"
+          ]
+        },
+        "length": 7,
+        "vocabulary": 5,
+        "difficulty": 1.3333333333333333,
+        "volume": 16.253496664211536,
+        "effort": 21.67132888561538,
+        "bugs": 0.005417832221403845,
+        "time": 1.2039627158675212
+      },
+      "params": 1,
+      "line": 33,
+      "cyclomaticDensity": 25
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 5,
+      "path": "should",
+      "type": "CommonJS"
+    },
+    {
+      "line": 7,
+      "path": "../lib/plato",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 86.51618249331524,
+  "params": 1,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "test/plato.js"
+  }
+}

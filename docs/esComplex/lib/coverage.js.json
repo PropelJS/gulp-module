@@ -1,0 +1,261 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 25,
+      "physical": 52
+    },
+    "cyclomatic": 1,
+    "halstead": {
+      "operators": {
+        "distinct": 8,
+        "total": 55,
+        "identifiers": [
+          "var",
+          "=",
+          ".",
+          "()",
+          "function",
+          "[]",
+          "+",
+          "+="
+        ]
+      },
+      "operands": {
+        "distinct": 48,
+        "total": 82,
+        "identifiers": [
+          "\"use strict\"",
+          "exec",
+          "\"child_process\"",
+          "require",
+          "path",
+          "\"path\"",
+          "gulp",
+          null,
+          "config",
+          "setupCoverage",
+          "gulpRef",
+          "conf",
+          "\"cover\"",
+          0,
+          "<anonymous>",
+          "\"unit\"",
+          "coverageTask",
+          "task",
+          "done",
+          "istanbulPath",
+          "__dirname",
+          "\"../node_modules/istanbul/lib/cli.js\"",
+          "resolve",
+          "coverageFiles",
+          "root",
+          "\"docs/coverage/\"",
+          "\"**/coverage*.json\"",
+          "cmd",
+          "\"node --harmony \"",
+          "\" check-coverage\"",
+          "\" --statements \"",
+          "statementsThreshold",
+          "\" --functions \"",
+          "functionsThreshold",
+          "\" --branches \"",
+          "branchesThreshold",
+          "\" --lines \"",
+          "linesThreshold",
+          "\" \"",
+          "execCallback",
+          "err",
+          "stdout",
+          "stderr",
+          "console",
+          "log",
+          "error",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 137,
+      "vocabulary": 56,
+      "difficulty": 6.833333333333333,
+      "volume": 795.6076243218919,
+      "effort": 5436.652099532927,
+      "bugs": 0.2652025414406306,
+      "time": 302.0362277518293
+    },
+    "params": 6,
+    "line": 1,
+    "cyclomaticDensity": 4
+  },
+  "functions": [
+    {
+      "name": "setupCoverage",
+      "sloc": {
+        "logical": 3,
+        "physical": 8
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 5,
+          "identifiers": [
+            "=",
+            "()",
+            "[]",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 10,
+          "total": 13,
+          "identifiers": [
+            "gulpRef",
+            "conf",
+            "gulp",
+            "config",
+            "\"cover\"",
+            0,
+            "<anonymous>",
+            "\"unit\"",
+            "coverageTask",
+            "task"
+          ]
+        },
+        "length": 18,
+        "vocabulary": 14,
+        "difficulty": 2.6,
+        "volume": 68.53238859703687,
+        "effort": 178.18421035229588,
+        "bugs": 0.022844129532345624,
+        "time": 9.89912279734977
+      },
+      "params": 2,
+      "line": 15,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "coverageTask",
+      "sloc": {
+        "logical": 11,
+        "physical": 21
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 7,
+          "total": 30,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "+",
+            "+=",
+            "function"
+          ]
+        },
+        "operands": {
+          "distinct": 25,
+          "total": 41,
+          "identifiers": [
+            "done",
+            "istanbulPath",
+            "__dirname",
+            "\"../node_modules/istanbul/lib/cli.js\"",
+            "path",
+            "resolve",
+            "coverageFiles",
+            "config",
+            "root",
+            "\"docs/coverage/\"",
+            "\"**/coverage*.json\"",
+            "cmd",
+            "\"node --harmony \"",
+            "\" check-coverage\"",
+            "\" --statements \"",
+            "statementsThreshold",
+            "\" --functions \"",
+            "functionsThreshold",
+            "\" --branches \"",
+            "branchesThreshold",
+            "\" --lines \"",
+            "linesThreshold",
+            "\" \"",
+            "execCallback",
+            "exec"
+          ]
+        },
+        "length": 71,
+        "vocabulary": 32,
+        "difficulty": 5.739999999999999,
+        "volume": 355,
+        "effort": 2037.6999999999998,
+        "bugs": 0.11833333333333333,
+        "time": 113.20555555555555
+      },
+      "params": 1,
+      "line": 30,
+      "cyclomaticDensity": 9.090909090909092
+    },
+    {
+      "name": "execCallback",
+      "sloc": {
+        "logical": 3,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 2,
+          "total": 5,
+          "identifiers": [
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 7,
+          "total": 11,
+          "identifiers": [
+            "err",
+            "stdout",
+            "stderr",
+            "console",
+            "log",
+            "error",
+            "done"
+          ]
+        },
+        "length": 16,
+        "vocabulary": 9,
+        "difficulty": 1.5714285714285714,
+        "volume": 50.718800023077,
+        "effort": 79.70097146483529,
+        "bugs": 0.016906266674359,
+        "time": 4.427831748046405
+      },
+      "params": 3,
+      "line": 44,
+      "cyclomaticDensity": 33.33333333333333
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "child_process",
+      "type": "CommonJS"
+    },
+    {
+      "line": 4,
+      "path": "path",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 70.28667580499084,
+  "params": 2,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.1",
+    "fileName": "lib/coverage.js"
+  }
+}

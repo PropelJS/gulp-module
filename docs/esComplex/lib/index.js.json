@@ -1,26 +1,27 @@
 {
   "aggregate": {
     "sloc": {
-      "logical": 20,
-      "physical": 60
+      "logical": 38,
+      "physical": 117
     },
     "cyclomatic": 1,
     "halstead": {
       "operators": {
-        "distinct": 6,
-        "total": 35,
+        "distinct": 7,
+        "total": 84,
         "identifiers": [
           "var",
           "=",
           "()",
           "function",
           "[]",
-          "."
+          ".",
+          "+"
         ]
       },
       "operands": {
-        "distinct": 35,
-        "total": 79,
+        "distinct": 68,
+        "total": 172,
         "identifiers": [
           "\"use strict\"",
           "help",
@@ -31,6 +32,9 @@
           "config",
           "defineLint",
           "defineComplexity",
+          "defineTest",
+          "defineBuild",
+          "defineDev",
           "\"./jsvalidate\"",
           "\"./jshint\"",
           "\"./jscs\"",
@@ -55,60 +59,93 @@
           "\"plato\"",
           "\"escomplex\"",
           "\"cost\"",
+          "\"./unit\"",
+          "\"./coverage\"",
+          "\"test\"",
+          "\"Runs Unit Tests Against Source Files\"",
+          "\"unit\"",
+          "\"cover\"",
+          "\"./contribs\"",
+          "\"./todo\"",
+          "\"./changelog\"",
+          "\"./docs\"",
+          "\"build\"",
+          "\"Runs the Tools Needed for a Complete Build\"",
+          "\"contribs\"",
+          "\"todo\"",
+          "\"changelog\"",
+          "\"docs\"",
+          "\"dev\"",
+          "\"Runs the Development Workflow\"",
+          "watcher",
+          "watch",
+          "\"change\"",
+          "event",
+          "\"File \"",
+          "path",
+          "\" was \"",
+          "type",
+          "\", running tasks...\"",
+          "console",
+          "log",
+          "on",
           "module",
           "exports"
         ]
       },
-      "length": 114,
-      "vocabulary": 41,
-      "difficulty": 6.771428571428571,
-      "volume": 610.7609285264615,
-      "effort": 4135.724001736325,
-      "bugs": 0.20358697617548716,
-      "time": 229.76244454090693
+      "length": 256,
+      "vocabulary": 75,
+      "difficulty": 8.852941176470587,
+      "volume": 1594.5775847669454,
+      "effort": 14116.70155926031,
+      "bugs": 0.5315258615889819,
+      "time": 784.2611977366838
     },
-    "params": 6,
+    "params": 13,
     "line": 1,
-    "cyclomaticDensity": 5
+    "cyclomaticDensity": 2.631578947368421
   },
   "functions": [
     {
       "name": "gulpSetup",
       "sloc": {
-        "logical": 3,
-        "physical": 6
+        "logical": 6,
+        "physical": 9
       },
       "cyclomatic": 1,
       "halstead": {
         "operators": {
           "distinct": 1,
-          "total": 3,
+          "total": 6,
           "identifiers": [
             "()"
           ]
         },
         "operands": {
-          "distinct": 5,
-          "total": 10,
+          "distinct": 8,
+          "total": 19,
           "identifiers": [
             "gulp",
             "config",
             "help",
             "defineLint",
-            "defineComplexity"
+            "defineComplexity",
+            "defineTest",
+            "defineBuild",
+            "defineDev"
           ]
         },
-        "length": 13,
-        "vocabulary": 6,
-        "difficulty": 1,
-        "volume": 33.60451250937503,
-        "effort": 33.60451250937503,
-        "bugs": 0.011201504169791677,
-        "time": 1.8669173616319459
+        "length": 25,
+        "vocabulary": 9,
+        "difficulty": 1.1875,
+        "volume": 79.24812503605781,
+        "effort": 94.10714848031866,
+        "bugs": 0.02641604167868594,
+        "time": 5.228174915573259
       },
       "params": 2,
       "line": 11,
-      "cyclomaticDensity": 33.33333333333333
+      "cyclomaticDensity": 16.666666666666664
     },
     {
       "name": "defineLint",
@@ -119,17 +156,18 @@
       "cyclomatic": 1,
       "halstead": {
         "operators": {
-          "distinct": 3,
-          "total": 11,
+          "distinct": 4,
+          "total": 12,
           "identifiers": [
             "()",
             "[]",
+            "function",
             "."
           ]
         },
         "operands": {
           "distinct": 15,
-          "total": 27,
+          "total": 28,
           "identifiers": [
             "gulp",
             "config",
@@ -148,17 +186,49 @@
             "task"
           ]
         },
-        "length": 38,
-        "vocabulary": 18,
-        "difficulty": 2.7,
-        "volume": 158.45715005480787,
-        "effort": 427.8343051479813,
-        "bugs": 0.05281905001826929,
-        "time": 23.768572508221183
+        "length": 40,
+        "vocabulary": 19,
+        "difficulty": 3.7333333333333334,
+        "volume": 169.9171005377434,
+        "effort": 634.3571753409087,
+        "bugs": 0.056639033512581136,
+        "time": 35.24206529671715
       },
       "params": 2,
-      "line": 24,
+      "line": 27,
       "cyclomaticDensity": 20
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 0,
+        "physical": 1
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "operands": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "length": 0,
+        "time": 0,
+        "bugs": 0,
+        "effort": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "vocabulary": 0
+      },
+      "params": 0,
+      "line": 38,
+      "cyclomaticDensity": null
     },
     {
       "name": "defineComplexity",
@@ -169,17 +239,18 @@
       "cyclomatic": 1,
       "halstead": {
         "operators": {
-          "distinct": 3,
-          "total": 13,
+          "distinct": 4,
+          "total": 14,
           "identifiers": [
             "()",
             "[]",
+            "function",
             "."
           ]
         },
         "operands": {
           "distinct": 17,
-          "total": 32,
+          "total": 33,
           "identifiers": [
             "gulp",
             "config",
@@ -200,17 +271,346 @@
             "task"
           ]
         },
-        "length": 45,
-        "vocabulary": 20,
-        "difficulty": 2.8235294117647056,
-        "volume": 194.4867642699313,
-        "effort": 549.1390991151002,
-        "bugs": 0.06482892142331044,
-        "time": 30.507727728616675
+        "length": 47,
+        "vocabulary": 21,
+        "difficulty": 3.8823529411764706,
+        "volume": 206.43891887060175,
+        "effort": 801.4687438505715,
+        "bugs": 0.06881297295686725,
+        "time": 44.52604132503175
       },
       "params": 2,
-      "line": 44,
+      "line": 47,
       "cyclomaticDensity": 16.666666666666664
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 0,
+        "physical": 1
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "operands": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "length": 0,
+        "time": 0,
+        "bugs": 0,
+        "effort": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "vocabulary": 0
+      },
+      "params": 0,
+      "line": 60,
+      "cyclomaticDensity": null
+    },
+    {
+      "name": "defineTest",
+      "sloc": {
+        "logical": 3,
+        "physical": 9
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 8,
+          "identifiers": [
+            "()",
+            "[]",
+            "function",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 11,
+          "total": 18,
+          "identifiers": [
+            "gulp",
+            "config",
+            "\"./unit\"",
+            "require",
+            "\"./coverage\"",
+            "\"test\"",
+            "\"Runs Unit Tests Against Source Files\"",
+            "<anonymous>",
+            "\"unit\"",
+            "\"cover\"",
+            "task"
+          ]
+        },
+        "length": 26,
+        "vocabulary": 15,
+        "difficulty": 3.272727272727273,
+        "volume": 101.57915548582149,
+        "effort": 332.44087249905215,
+        "bugs": 0.033859718495273826,
+        "time": 18.46893736105845
+      },
+      "params": 2,
+      "line": 69,
+      "cyclomaticDensity": 33.33333333333333
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 0,
+        "physical": 1
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "operands": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "length": 0,
+        "time": 0,
+        "bugs": 0,
+        "effort": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "vocabulary": 0
+      },
+      "params": 0,
+      "line": 76,
+      "cyclomaticDensity": null
+    },
+    {
+      "name": "defineBuild",
+      "sloc": {
+        "logical": 5,
+        "physical": 16
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 12,
+          "identifiers": [
+            "()",
+            "[]",
+            "function",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 18,
+          "total": 31,
+          "identifiers": [
+            "gulp",
+            "config",
+            "\"./contribs\"",
+            "require",
+            "\"./todo\"",
+            "\"./changelog\"",
+            "\"./docs\"",
+            "\"build\"",
+            "\"Runs the Tools Needed for a Complete Build\"",
+            "<anonymous>",
+            "\"lint\"",
+            "\"test\"",
+            "\"comp\"",
+            "\"contribs\"",
+            "\"todo\"",
+            "\"changelog\"",
+            "\"docs\"",
+            "task"
+          ]
+        },
+        "length": 43,
+        "vocabulary": 22,
+        "difficulty": 3.4444444444444446,
+        "volume": 191.75555960140377,
+        "effort": 660.4913719603908,
+        "bugs": 0.0639185198671346,
+        "time": 36.6939651089106
+      },
+      "params": 2,
+      "line": 85,
+      "cyclomaticDensity": 20
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 0,
+        "physical": 1
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "operands": {
+          "distinct": 0,
+          "total": 0,
+          "identifiers": [
+          ]
+        },
+        "length": 0,
+        "time": 0,
+        "bugs": 0,
+        "effort": 0,
+        "volume": 0,
+        "difficulty": 0,
+        "vocabulary": 0
+      },
+      "params": 0,
+      "line": 99,
+      "cyclomaticDensity": null
+    },
+    {
+      "name": "defineDev",
+      "sloc": {
+        "logical": 1,
+        "physical": 8
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 4,
+          "identifiers": [
+            "()",
+            "[]",
+            "function",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 6,
+          "total": 8,
+          "identifiers": [
+            "gulp",
+            "config",
+            "\"dev\"",
+            "\"Runs the Development Workflow\"",
+            "<anonymous>",
+            "task"
+          ]
+        },
+        "length": 12,
+        "vocabulary": 10,
+        "difficulty": 2.6666666666666665,
+        "volume": 39.863137138648355,
+        "effort": 106.3016990363956,
+        "bugs": 0.013287712379549451,
+        "time": 5.905649946466422
+      },
+      "params": 2,
+      "line": 108,
+      "cyclomaticDensity": 100
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 2,
+        "physical": 6
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 6,
+          "total": 9,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "[]",
+            "function"
+          ]
+        },
+        "operands": {
+          "distinct": 9,
+          "total": 12,
+          "identifiers": [
+            "watcher",
+            "config",
+            "watch",
+            "<anonymous>",
+            "\"lint\"",
+            "\"unit\"",
+            "gulp",
+            "\"change\"",
+            "on"
+          ]
+        },
+        "length": 21,
+        "vocabulary": 15,
+        "difficulty": 4,
+        "volume": 82.0447025077789,
+        "effort": 328.1788100311156,
+        "bugs": 0.02734823416925963,
+        "time": 18.232156112839753
+      },
+      "params": 0,
+      "line": 109,
+      "cyclomaticDensity": 50
+    },
+    {
+      "name": "<anonymous>",
+      "sloc": {
+        "logical": 1,
+        "physical": 3
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 8,
+          "identifiers": [
+            "()",
+            "+",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 8,
+          "total": 10,
+          "identifiers": [
+            "event",
+            "\"File \"",
+            "path",
+            "\" was \"",
+            "type",
+            "\", running tasks...\"",
+            "console",
+            "log"
+          ]
+        },
+        "length": 18,
+        "vocabulary": 11,
+        "difficulty": 1.875,
+        "volume": 62.26976913547136,
+        "effort": 116.75581712900879,
+        "bugs": 0.020756589711823786,
+        "time": 6.486434284944933
+      },
+      "params": 1,
+      "line": 111,
+      "cyclomaticDensity": 100
     }
   ],
   "dependencies": [
@@ -220,53 +620,83 @@
       "type": "CommonJS"
     },
     {
-      "line": 25,
+      "line": 28,
       "path": "./jsvalidate",
       "type": "CommonJS"
     },
     {
-      "line": 26,
+      "line": 29,
       "path": "./jshint",
       "type": "CommonJS"
     },
     {
-      "line": 27,
+      "line": 30,
       "path": "./jscs",
       "type": "CommonJS"
     },
     {
-      "line": 28,
+      "line": 31,
       "path": "./jscpd",
       "type": "CommonJS"
     },
     {
-      "line": 45,
+      "line": 48,
       "path": "./size",
       "type": "CommonJS"
     },
     {
-      "line": 46,
+      "line": 49,
       "path": "./complexity",
       "type": "CommonJS"
     },
     {
-      "line": 47,
+      "line": 50,
       "path": "./plato",
       "type": "CommonJS"
     },
     {
-      "line": 48,
+      "line": 51,
       "path": "./escomplex",
       "type": "CommonJS"
     },
     {
-      "line": 49,
+      "line": 52,
       "path": "./cost",
+      "type": "CommonJS"
+    },
+    {
+      "line": 70,
+      "path": "./unit",
+      "type": "CommonJS"
+    },
+    {
+      "line": 71,
+      "path": "./coverage",
+      "type": "CommonJS"
+    },
+    {
+      "line": 86,
+      "path": "./contribs",
+      "type": "CommonJS"
+    },
+    {
+      "line": 87,
+      "path": "./todo",
+      "type": "CommonJS"
+    },
+    {
+      "line": 88,
+      "path": "./changelog",
+      "type": "CommonJS"
+    },
+    {
+      "line": 89,
+      "path": "./docs",
       "type": "CommonJS"
     }
   ],
-  "maintainability": 73.76697943369469,
-  "params": 2,
+  "maintainability": 80.54880088075217,
+  "params": 1.0833333333333333,
   "meta": {
     "analysis": "gulp-escomplex",
     "analysisVersion": "1.0.1",
