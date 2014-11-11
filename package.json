@@ -1,0 +1,36 @@
+{
+  "name": "gulp-module",
+  "version": "1.0.0",
+  "description": "Gulp Pipeline for Node Modules",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PropelJS/gulp-module.git"
+  },
+  "keywords": [
+    "Gulp",
+    "Module",
+    "PropelJS",
+    "Propel"
+  ],
+  "author": "Joshwa Fugett <jfugett@thotjs.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PropelJS/gulp-module/issues"
+  },
+  "homepage": "https://github.com/PropelJS/gulp-module",
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "gulp-complexity": "git://github.com/PropelJS/gulp-complexity",
+    "gulp-help": "^1.3.0",
+    "gulp-jscpd": "0.0.3",
+    "gulp-jscs": "git://github.com/PropelJS/gulp-jscs",
+    "gulp-jshint": "^1.9.0",
+    "gulp-jsvalidate": "git://github.com/PropelJS/gulp-jsvalidate",
+    "gulp-size": "^1.1.0",
+    "jshint-stylish": "^1.0.0"
+  }
+}
