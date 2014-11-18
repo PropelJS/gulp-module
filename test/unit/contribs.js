@@ -5,7 +5,7 @@
 require('should');
 var path = require('path');
 
-var contrib = require('../lib/contribs');
+var contrib = require('../../lib/contribs');
 
 var gulpMock = {};
 var task = null;

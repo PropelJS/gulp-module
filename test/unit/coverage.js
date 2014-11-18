@@ -5,7 +5,7 @@
 var should = require('should'); //jshint ignore:line
 var path = require('path');
 
-var coverage = require('../lib/coverage');
+var coverage = require('../../lib/coverage');
 
 var gulpMock = {};
 var task = null;

@@ -2,9 +2,9 @@
 
 /* globals describe:false, it:false */
 
-var should = require('should'); //jshint ignore:line
+var should = require('should'); // jshint ignore:line
 
-var size = require('../lib/size');
+var escomplex = require('../../lib/escomplex');
 
 var gulpMock = {};
 var task = null;
@@ -14,22 +14,23 @@ gulpMock.task = function (name, description, deps, func) {
 };
 
 var configMock = {
-  mod: 'size',
+  mod: 'escomplex',
+  root: __dirname,
   src: ['**/*.js', '!./node_modules/**', '!./docs/**']
 };
 
-size(gulpMock, configMock);
+escomplex(gulpMock, configMock);
 
-describe('Gulp Module Size', function () {
+describe('Gulp Module ESComplex', function () {
   it('Should return a function', function () {
-    size.should.be.type('function');
+    escomplex.should.be.type('function');
   });
 
-  it('Should create the size task', function () {
+  it('Should add the escomplex task', function () {
     task.should.be.type('function');
   });
 
-  it('Should run the size task', function (cb) {
+  it('Should run the escomplex task', function (cb) {
     try {
       task();
     } catch (e) {

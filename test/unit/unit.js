@@ -6,7 +6,7 @@ var should = require('should'); //jshint ignore:line
 var path = require('path');
 var rimraf = require('rimraf');
 
-var unitTests = require('../lib/unit');
+var unitTests = require('../../lib/unit');
 
 var gulpMock = {};
 var task = null;

@@ -4,7 +4,7 @@
 
 var should = require('should'); // jshint ignore:line
 
-var calc = require('../lib/calculator');
+var calc = require('../../lib/calculator');
 
 var totals = {};
 var reports = [

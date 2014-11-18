@@ -5,7 +5,7 @@
 var should = require('should'); // jshint ignore:line
 var path = require('path');
 
-var todos = require('../lib/todo');
+var todos = require('../../lib/todo');
 
 var gulpMock = {};
 var task = null;

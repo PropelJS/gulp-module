@@ -2,11 +2,10 @@
 
 /* globals describe:false, it:false */
 
-require('should');
-
+var should = require('should'); // jshint ignore:line
 var path = require('path');
 
-var docs = require('../lib/docs');
+var changelog = require('../../lib/changelog');
 
 var gulpMock = {};
 var task = null;
@@ -16,22 +15,22 @@ gulpMock.task = function(name, description, deps, func) {
 };
 
 var configMock = {
-  mod: 'docs',
+  mod: 'changelog',
   root: path.resolve(__dirname, '../')
 };
 
-docs(gulpMock, configMock);
+changelog(gulpMock, configMock);
 
-describe('Gulp Module Docs', function() {
+describe('Gulp Module ChangeLog', function() {
   it('Should return a function', function() {
-    docs.should.be.type('function');
+    changelog.should.be.type('function');
   });
 
-  it('Should add the docs task', function() {
+  it('Should add the changelog task', function() {
     task.should.be.type('function');
   });
 
-  it('Should run the docs task', function(cb) {
+  it('Should run the changelog function', function(cb) {
     try {
       task();
       cb();

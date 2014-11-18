@@ -2,10 +2,11 @@
 
 /* globals describe:false, it:false */
 
-var should = require('should'); // jshint ignore:line
+require('should');
+
 var path = require('path');
 
-var cost = require('../lib/cost');
+var docs = require('../../lib/docs');
 
 var gulpMock = {};
 var task = null;
@@ -15,23 +16,22 @@ gulpMock.task = function(name, description, deps, func) {
 };
 
 var configMock = {
+  mod: 'docs',
   root: path.resolve(__dirname, '../')
 };
 
-cost(gulpMock, configMock);
+docs(gulpMock, configMock);
 
-describe('Gulp Module Cost', function() {
+describe('Gulp Module Docs', function() {
   it('Should return a function', function() {
-    cost.should.be.type('function');
+    docs.should.be.type('function');
   });
 
-  it('Should create a task', function() {
+  it('Should add the docs task', function() {
     task.should.be.type('function');
   });
 
-  it('Should run', function(cb) {
-    this.timeout(5000);
-
+  it('Should run the docs task', function(cb) {
     try {
       task();
       cb();

@@ -4,12 +4,12 @@
 
 var should = require('should'); //jshint ignore:line
 
-var complexity = require('../lib/complexity');
+var jscpd = require('../../lib/jscpd');
 
 var gulpMock = {};
 var task = null;
 
-gulpMock.task = function gTask (name, description, deps, func) {
+gulpMock.task = function gulpTask (name, description, deps, func) {
   task = func;
 };
 
@@ -17,18 +17,18 @@ var configMock = {
   src: ['**/*.js', '!./node_modules/**', '!./docs/**']
 };
 
-complexity(gulpMock, configMock);
+jscpd(gulpMock, configMock);
 
-describe('Gulp Module Complexity', function () {
+describe('Gulp Module JSCPD', function () {
   it('Should return a function', function () {
-    complexity.should.be.type('function');
+    jscpd.should.be.type('function');
   });
 
-  it('Should add the complexity task', function () {
+  it('Should create a task', function () {
     task.should.be.type('function');
   });
 
-  it('Should run the complexity task', function (cb) {
+  it('Should run the task', function (cb) {
     try {
       task();
     } catch (e) {

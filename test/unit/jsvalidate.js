@@ -2,9 +2,9 @@
 
 /* globals describe:false, it:false */
 
-var should = require('should');// jshint ignore:line
+var should = require('should'); //jshint ignore:line
 
-var plato = require('../lib/plato');
+var jsvalidate = require('../../lib/jsvalidate');
 
 var gulpMock = {};
 var task = null;
@@ -14,23 +14,21 @@ gulpMock.task = function (name, description, deps, func) {
 };
 
 var configMock = {
-  mod: 'plato',
-  root: __dirname,
   src: ['**/*.js', '!./node_modules/**', '!./docs/**']
 };
 
-plato(gulpMock, configMock);
+jsvalidate(gulpMock, configMock);
 
-describe('Gulp module plato', function () {
+describe('Gulp Module JSValidate', function () {
   it('Should return a function', function () {
-    plato.should.be.type('function');
+    jsvalidate.should.be.type('function');
   });
 
-  it('Should create the plato task', function () {
+  it('Should create a task', function () {
     task.should.be.type('function');
   });
 
-  it('Should run the plato task', function (cb) {
+  it('Should run the validate task', function (cb) {
     try {
       task();
     } catch (e) {

@@ -3,7 +3,7 @@
 /* globals describe:false, it:false */
 
 var should = require('should'); //jshint ignore:line
-var gulpLib = require('../lib/index');
+var gulpLib = require('../../lib/index');
 
 var gulpMock = {};
 gulpMock.tasks = [];

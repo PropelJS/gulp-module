@@ -5,7 +5,7 @@
 var should = require('should'); // jshint ignore:line
 var path = require('path');
 
-var changelog = require('../lib/changelog');
+var cost = require('../../lib/cost');
 
 var gulpMock = {};
 var task = null;
@@ -15,22 +15,23 @@ gulpMock.task = function(name, description, deps, func) {
 };
 
 var configMock = {
-  mod: 'changelog',
   root: path.resolve(__dirname, '../')
 };
 
-changelog(gulpMock, configMock);
+cost(gulpMock, configMock);
 
-describe('Gulp Module ChangeLog', function() {
+describe('Gulp Module Cost', function() {
   it('Should return a function', function() {
-    changelog.should.be.type('function');
+    cost.should.be.type('function');
   });
 
-  it('Should add the changelog task', function() {
+  it('Should create a task', function() {
     task.should.be.type('function');
   });
 
-  it('Should run the changelog function', function(cb) {
+  it('Should run', function(cb) {
+    this.timeout(5000);
+
     try {
       task();
       cb();

@@ -12,7 +12,6 @@ Gulp Tasks
   - build - runs the full build workflow
     - lints files
     - runs unit tests
-    - runs the api endpoint tests
     - runs code coverage report
     - runs the benchmark tests
     - runs the usage tests
@@ -27,4 +26,4 @@ Gulp Tasks
   - comp - runs the complexity reports and cost analysis
   - usage - runs the usage tests
   - bench - runs the benchmark tests
-  - docs - generates the api docs
+  - docs - generates the module docs

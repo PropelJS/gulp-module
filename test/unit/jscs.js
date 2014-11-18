@@ -4,7 +4,7 @@
 
 var should = require('should'); //jshint ignore:line
 
-var jscs = require('../lib/jscs');
+var jscs = require('../../lib/jscs');
 
 var gulpMock = {};
 var task = null;
