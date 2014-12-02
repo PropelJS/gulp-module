@@ -116,6 +116,14 @@
         </li>
         <li><a href="#unitTask"><i class="alert alert-info"></i><span>unitTask</span></a>
         </li>
+        <li><a href="bench.js.html">bench.js</a></li>
+        <div class="scrollspy">
+          <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
+        </div>
+        <li><a href="#setupUnit"><i class="alert alert-info"></i><span>setupUnit</span></a>
+        </li>
+        <li><a href="#unitTask"><i class="alert alert-info"></i><span>unitTask</span></a>
+        </li>
         <li><a href="calculator.js.html">calculator.js</a></li>
         <div class="scrollspy">
           <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
@@ -252,6 +260,14 @@
         </li>
         <li><a href="#unitTask"><i class="alert alert-info"></i><span>unitTask</span></a>
         </li>
+        <li><a href="usage.js.html">usage.js</a></li>
+        <div class="scrollspy">
+          <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
+        </div>
+        <li><a href="#setupUnit"><i class="alert alert-info"></i><span>setupUnit</span></a>
+        </li>
+        <li><a href="#unitTask"><i class="alert alert-info"></i><span>unitTask</span></a>
+        </li>
         <div class="span9">
         </div>
       </div>
@@ -324,7 +340,7 @@
   // breaking up the following line since it's messing with the docs generator
   cmd += ' -x &quot;**' + '/docs/' + '**&quot;';
   cmd += ' ' + mochaPath;
-  cmd += ' -- --harmony';
+  cmd += ' -- --harmony --recursive test/unit';
 
   exec(cmd, function execCallback (err, stdout, stderr) {
     console.log(stdout);

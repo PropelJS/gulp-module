@@ -1,6 +1,6 @@
 {
   "name": "gulp-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Gulp Pipeline for Node Modules",
   "main": "lib/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/PropelJS/gulp-module",
   "dependencies": {
+    "benchmark": "git://github.com/PropelJS/benchmark",
     "conventional-changelog": "0.0.11",
     "doxx": "^1.1.1",
     "gulp": "^3.8.10",

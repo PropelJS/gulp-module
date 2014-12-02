@@ -112,6 +112,10 @@
         <div class="scrollspy">
           <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
         </div>
+        <li><a href="bench.js.html">bench.js</a></li>
+        <div class="scrollspy">
+          <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
+        </div>
         <li><a href="calculator.js.html">calculator.js</a></li>
         <div class="scrollspy">
           <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
@@ -180,9 +184,42 @@
         <div class="scrollspy">
           <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
         </div>
+        <li><a href="usage.js.html">usage.js</a></li>
+        <div class="scrollspy">
+          <ul class="nav nav-list bs-docs-sidenav affix-top"></ul>
+        </div>
         <div class="span9">
           <section id="Main"><h1>gulp-module</h1>
-<p>Gulp Pipeline for Node Modules</p></section>
+<p>Gulp Pipeline for Node Modules</p><h2>Gulp Tasks</h2>
+<ul>
+<li>help - displays the list of commands available</li>
+<li>dev - runs the development workflow<ul>
+<li>lint files on change</li>
+<li>run unit tests on change</li>
+</ul>
+</li>
+<li>build - runs the full build workflow<ul>
+<li>lints files</li>
+<li>runs unit tests</li>
+<li>runs code coverage report</li>
+<li>runs the benchmark tests</li>
+<li>runs the usage tests</li>
+<li>runs complexity reports</li>
+<li>runs cost analysis</li>
+<li>generates changelog</li>
+<li>generates todos</li>
+<li>generates contributors file</li>
+<li>generates docs</li>
+</ul>
+</li>
+<li>lint - lints the source files</li>
+<li>test - runs the unit tests, and code coverage</li>
+<li>comp - runs the complexity reports and cost analysis</li>
+<li>usage - runs the usage tests</li>
+<li>bench - runs the benchmark tests</li>
+<li>docs - generates the module docs</li>
+</ul>
+</section>
         </div>
       </div>
     </div>
